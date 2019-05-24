@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+html, body {
+  width: 100;
+  height: 100%;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.cursorPoint {
+  cursor: pointer;
+}
+
+.site {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+}
+
+.iddinkLogo {
+  padding-top: 8px;
+}
+
+.headerInner {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.headerImg {
+  background-image: url("../img/slide-iddink1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.headerImgInner {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto 200px;
+  grid-column-gap: 40%;
+  padding-top: 50px;
+}
+.headerImgInner p {
+  color: #fff;
+  float: left;
+  font-size: 22px;
+}
+.headerImgInner img {
+  float: right;
+}
+
+.rightFloat {
+  float: right;
+}
+
+@media screen and (max-width: 650px) {
+  .rightFloat {
+    float: none;
+  }
+}
+.headerButton {
+  padding-top: 18px;
+  padding-left: 320px;
+}
+.headerButton button {
+  width: 130px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: #0073CF;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .dropbtn {
+    padding: 5px;
+    font-size: 13px;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: #0073CF;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.dropbtn .rotate {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #0073CF;
+  color: #fff;
+}
+
+.dropbtn:hover .rotate {
+  transform: rotate(180deg);
+}
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+
+.watDoenWij {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.watDoenWijInner {
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 15px;
+}
+.watDoenWijInner h1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #0073CF;
+  padding: 15px;
+}
+.watDoenWijInner button {
+  padding: 0 35px;
+  height: 50px;
+  font-size: 15px;
+  background-color: #0073CF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.firstLine {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.secondLine {
+  color: #0073CF;
+  cursor: pointer;
+}
+
+.imageGrid {
+  width: 100%;
+}
+
+.imageGridInner {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+.textOne {
+  color: #0073CF;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.textTwo {
+  padding-bottom: 10px;
+}
+
+.textThree {
+  color: #0073CF;
+  padding-bottom: 45px;
+}
+
+.ipadActie {
+  background-color: #85BADF;
+  color: #fff;
+}
+
+.ipadActieInner {
+  padding-top: 45px;
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+}
+.ipadActieInner button {
+  padding: 0 35px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: #0073CF;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.ipadActieInner img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .ipadActieInner {
+    -webkit-grid-template-columns: 1fr;
+    -moz-grid-template-columns: 1fr;
+    -ms-grid-template-columns: 1fr;
+    -o-grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.topActie {
+  padding-top: 40px;
+}
+.topActie h2 {
+  font-size: 27px;
+  padding-bottom: 25px;
+}
+.topActie p {
+  padding-bottom: 25px;
+}
+.topActie button {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.neemContactOp {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.neemContactOp button {
+  padding: 0 20px;
+  height: 35px;
+  font-size: 15px;
+  background-color: #0073CF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.neemContactOp h2 {
+  color: #0073CF;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.neemContactOp p {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.neemContactOpInner {
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 15px;
+}
+
+footer {
+  color: #fff;
+  background-color: #0073CF;
+  width: 100%;
+}
+
+.footerInner {
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footerInner img {
+  float: left;
+  padding-bottom: 45px;
+}
+.footerInner ul {
+  list-style: none;
+  float: right;
+}
+.footerInner ul li {
+  display: inline-block;
+  padding: 5px 18px;
+  margin-bottom: 20px;
+}
+.footerInner ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footerInner p {
+  padding-bottom: 70px;
+}
+
+.footerFour p {
+  float: right;
+}
+
+@media screen and (max-width: 650px) {
+  .footerInner {
+    -webkit-grid-template-columns: 1fr;
+    -moz-grid-template-columns: 1fr;
+    -ms-grid-template-columns: 1fr;
+    -o-grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .footerInner ul {
+    float: none;
+  }
+
+  .footerFour p {
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=iddink.css.map */

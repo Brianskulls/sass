@@ -1,0 +1,51 @@
+footer
+  color: $wit
+  background-color: $blauw
+  width: 100%
+
+
+.footerInner
+  margin: 0 auto
+  width: 75%
+  padding-top: 30px
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+  img
+    float: left
+    padding-bottom: 45px
+
+
+  ul
+    list-style: none
+    float: right
+
+    li
+      display: inline-block
+      padding: 5px 18px
+      margin-bottom: 20px
+
+      a
+        text-decoration: none
+        color: $wit
+
+  p
+    padding-bottom: 70px
+
+
+
+.footerFour p
+  float: right
+
+
+@media screen and (max-width: 650px)
+  .footerInner
+    +grid-template-columns(1fr)
+
+
+  .footerInner ul
+    float: none
+
+
+  .footerFour p
+    float: none

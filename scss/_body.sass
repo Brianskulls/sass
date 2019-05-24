@@ -1,0 +1,131 @@
+.watDoenWij
+  width: 100%
+  text-align: center
+  padding-bottom: 50px
+
+.watDoenWijInner
+  margin: 0 auto
+  width: 75%
+  padding-top: 15px
+
+  h1
+    font-size: 25px
+    font-weight: bold
+    color: $blauw
+    padding: 15px
+
+  button
+    padding: 0 35px
+    height: 50px
+    font-size: 15px
+    background-color: $blauw
+    color: $wit
+    border: none
+    border-radius: 5px
+    margin-bottom: 10px
+    cursor: $point
+    outline: none
+
+.firstLine
+  font-size: 20px
+  padding-bottom: 30px
+
+.secondLine
+  color: $blauw
+  cursor: $point
+
+.imageGrid
+  width: 100%
+
+.imageGridInner
+  margin: 0 auto
+  width: 80%
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+  justify-items: center
+
+.textOne
+  color: $blauw
+  font-weight: bold
+  padding-bottom: 10px
+
+.textTwo
+  padding-bottom: 10px
+
+.textThree
+  color: $blauw
+  padding-bottom: 45px
+
+.ipadActie
+  background-color: #85BADF
+  color: $wit
+
+.ipadActieInner
+  padding-top: 45px
+  margin: 0 auto
+  width: 80%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  padding-bottom: 30px
+
+  button
+    padding: 0 35px
+    height: 50px
+    border-radius: 5px
+    border: 2px solid $wit
+    background-color: $blauw
+    color: $wit
+    outline: none
+    cursor: $point
+
+  img
+    width: 100%
+
+@media screen and (max-width: 1000px)
+  .ipadActieInner
+    +grid-template-columns(1fr)
+
+.topActie
+  padding-top: 40px
+
+  h2
+    font-size: 27px
+    padding-bottom: 25px
+
+  p
+    padding-bottom: 25px
+
+  button
+    font-size: 17px
+    margin-bottom: 15px
+
+.neemContactOp
+  width: 100%
+  text-align: center
+  padding-bottom: 30px
+
+  button
+    padding: 0 20px
+    height: 35px
+    font-size: 15px
+    background-color: $blauw
+    color: $wit
+    border: none
+    border-radius: 5px
+    margin-bottom: 10px
+    cursor: $point
+    outline: none
+
+  h2
+    color: $blauw
+    padding-top: 40px
+    padding-bottom: 15px
+
+  p
+    padding-bottom: 20px
+    font-size: 20px
+
+.neemContactOpInner
+  margin: 0 auto
+  width: 75%
+  padding-top: 15px

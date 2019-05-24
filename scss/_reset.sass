@@ -1,0 +1,26 @@
+*
+  padding: 0
+  margin: 0
+  font-family: $font
+
+html
+  width: 100
+  height: 100%
+
+body
+  @extend html
+
+header, main, footer
+  flex-shrink: 0
+
+main
+  flex-grow: 1
+
+.cursorPoint
+  cursor: $point
+
+.site
+  min-height: 100%
+  display: flex
+  flex-direction: column
+  align-items: stretch
